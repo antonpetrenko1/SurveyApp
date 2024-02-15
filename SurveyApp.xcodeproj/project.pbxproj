@@ -14,6 +14,7 @@
 		FD609C5D2B7E402600231D48 /* SurveyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C5C2B7E402600231D48 /* SurveyAppTests.swift */; };
 		FD609C672B7E402600231D48 /* SurveyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C662B7E402600231D48 /* SurveyAppUITests.swift */; };
 		FD609C692B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C682B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift */; };
+		FD609C762B7E463900231D48 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C752B7E463900231D48 /* MainButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FD609C622B7E402600231D48 /* SurveyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD609C662B7E402600231D48 /* SurveyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITests.swift; sourceTree = "<group>"; };
 		FD609C682B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD609C752B7E463900231D48 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FD609C4D2B7E402500231D48 /* ContentView.swift */,
 				FD609C4F2B7E402600231D48 /* Assets.xcassets */,
 				FD609C512B7E402600231D48 /* Preview Content */,
+				FD609C752B7E463900231D48 /* MainButtonStyle.swift */,
 			);
 			path = SurveyApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				FD609C4E2B7E402500231D48 /* ContentView.swift in Sources */,
 				FD609C4C2B7E402500231D48 /* SurveyAppApp.swift in Sources */,
+				FD609C762B7E463900231D48 /* MainButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
