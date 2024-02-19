@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "EA56BAC2-823B-4A54-9B37-B972BF50E28C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SurveyApp.xcodeproj",
+        "identifier" : "FD609C572B7E402600231D48",
+        "name" : "SurveyAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

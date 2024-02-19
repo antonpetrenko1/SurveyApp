@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @State private var path = NavigationPath()
+    @EnvironmentObject private var coordinator: Coordinator
     @StateObject private var viewModel: WelcomeViewModel
     
     private struct Constants {
         static let navigationTitle: String = "Welcome!"
         static let buttonTitle: String = "Start survey"
+        static let errorTitle: String = "Something went wrong"
+        static let errorButtonTitle: String = "Try again"
     }
     
     init(viewModel: WelcomeViewModel) {
@@ -21,34 +23,50 @@ struct WelcomeView: View {
     }
     
     var body: some View {
-        NavigationStack(path: $path) {
-            VStack(alignment: .center, content: {
-                Button {
-                    viewModel.getQuestions()
-                } label: {
-                    Text(Constants.buttonTitle)
-                }
-                .buttonStyle(MainButtonStyle())
-            })
-            .navigationTitle(Constants.navigationTitle)
+        VStack {
+            switch viewModel.screenState {
+            case .isLoading:
+                loader
+            case .loaded:
+                loadedView
+            case .error:
+                errorView
+            }
         }
-        .overlay {
-            loader
+        .task {
+            await viewModel.getQuestions()
         }
+        .navigationTitle(Constants.navigationTitle)
+        .navigationBarTitleDisplayMode(.inline)
     }
     
-    @ViewBuilder
-    private var loader: some View {
-        if viewModel.loaderIsShown {
-            ZStack {
-                Color.gray.opacity(0.7)
-                    .ignoresSafeArea()
-                ProgressView()
+    private var loadedView: some View {
+        VStack(alignment: .center, content: {
+            Button(Constants.buttonTitle) {
+                coordinator.push(.question)
             }
+            .buttonStyle(MainButtonStyle())
+        })
+    }
+    
+    private var loader: LoaderView {
+        LoaderView()
+    }
+    
+    private var errorView: some View {
+        VStack {
+            Text(Constants.errorTitle)
+                .font(.headline)
+            Button(Constants.errorButtonTitle) {
+                Task { @MainActor in
+                    await viewModel.getQuestions()
+                }
+            }
+            .buttonStyle(MainButtonStyle())
         }
     }
 }
 
-#Preview {
-    WelcomeView(viewModel: .init())
+enum WelcomeScreenState {
+    case isLoading, loaded, error
 }

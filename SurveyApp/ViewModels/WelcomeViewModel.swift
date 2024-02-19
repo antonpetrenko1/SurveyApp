@@ -9,21 +9,20 @@ import Foundation
 
 @MainActor
 class WelcomeViewModel: ObservableObject {
-    @Published var loaderIsShown: Bool = false
-    let service: SurveyService = .init(host: URL(filePath: "https://xm-assignment.web.app/"), session: URLSession.shared)
-    var questions: [QuestionModel] = []
+    @Published var screenState: WelcomeScreenState = .loaded
+    let questionsManager: QuestionsManagerInterface
     
-    func getQuestions() {
-        loaderIsShown = true
-        
-        Task { @MainActor in
-            do {
-                let questions = try await service.getQuestions()
-                self.questions = questions
-                loaderIsShown = false
-            } catch {
-                loaderIsShown = false
-            }
+    init(questionsManager: QuestionsManagerInterface) {
+        self.questionsManager =  questionsManager
+    }
+    
+    func getQuestions() async {
+        screenState = .isLoading
+        do {
+            try await questionsManager.getQuestions()
+            screenState = .loaded
+        } catch {
+            screenState = .error
         }
     }
 }

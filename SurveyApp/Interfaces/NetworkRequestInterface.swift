@@ -13,3 +13,7 @@ public protocol NetworkRequestInterface {
     func create() -> URLRequest
     func parse(data: Data) throws -> ResponseDataType
 }
+
+public protocol NetworkUploadInterface {    
+    func create() -> URLRequest
+}

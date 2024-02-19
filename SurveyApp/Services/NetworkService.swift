@@ -9,6 +9,7 @@ import Foundation
 
 public protocol NetworkServiceInterface {
     func perform<Request: NetworkRequestInterface>(request: Request) async throws -> Request.ResponseDataType
+    func upload<Request: NetworkUploadInterface>(request: Request, data: Data) async throws
 }
 
 public class NetworkService: NetworkServiceInterface {
@@ -33,8 +34,27 @@ public class NetworkService: NetworkServiceInterface {
             }
             
             let parsedData = try request.parse(data: data)
-            
+
             return parsedData
+        } catch {
+            throw AppError.networkFailure
+        }
+    }
+    
+    public func upload<Request: NetworkUploadInterface>(request: Request, data: Data) async throws {
+        do {
+            let urlRequest = request.create()
+            let (_, response) = try await session.upload(request: urlRequest, data: data)
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw AppError.networkFailure
+            }
+            
+            guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 300 else {
+                throw AppError.wrongStatusCode
+            }
+            
+            return
         } catch {
             throw AppError.networkFailure
         }

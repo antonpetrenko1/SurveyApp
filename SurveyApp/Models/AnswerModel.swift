@@ -8,6 +8,6 @@
 import Foundation
 
 struct AnswerModel: Codable {
-    let id: String
+    let id: UInt
     let answer: String
 }

@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0775DE2B82DE55004A4A12 /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0775DD2B82DE55004A4A12 /* WelcomeViewModelTests.swift */; };
+		FD0775E12B82DEB4004A4A12 /* QuestionsManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0775E02B82DEB4004A4A12 /* QuestionsManagerMock.swift */; };
 		FD609C4C2B7E402500231D48 /* SurveyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C4B2B7E402500231D48 /* SurveyAppApp.swift */; };
-		FD609C4E2B7E402500231D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C4D2B7E402500231D48 /* ContentView.swift */; };
 		FD609C502B7E402600231D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD609C4F2B7E402600231D48 /* Assets.xcassets */; };
 		FD609C532B7E402600231D48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD609C522B7E402600231D48 /* Preview Assets.xcassets */; };
-		FD609C5D2B7E402600231D48 /* SurveyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C5C2B7E402600231D48 /* SurveyAppTests.swift */; };
-		FD609C672B7E402600231D48 /* SurveyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C662B7E402600231D48 /* SurveyAppUITests.swift */; };
-		FD609C692B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C682B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift */; };
 		FD609C762B7E463900231D48 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C752B7E463900231D48 /* MainButtonStyle.swift */; };
 		FD609C792B7E873800231D48 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C782B7E873800231D48 /* NetworkService.swift */; };
 		FD609C7C2B7E88C700231D48 /* NetworkRequestInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C7B2B7E88C700231D48 /* NetworkRequestInterface.swift */; };
@@ -26,6 +24,14 @@
 		FD609C8B2B7E8F6D00231D48 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C8A2B7E8F6D00231D48 /* AnswerModel.swift */; };
 		FD609C8E2B7E929F00231D48 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C8D2B7E929F00231D48 /* WelcomeView.swift */; };
 		FD609C912B7E930400231D48 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C902B7E930400231D48 /* WelcomeViewModel.swift */; };
+		FD609C932B7ED51E00231D48 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C922B7ED51E00231D48 /* QuestionView.swift */; };
+		FD609C952B7F0C9E00231D48 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD609C942B7F0C9E00231D48 /* QuestionViewModel.swift */; };
+		FD6B3E122B834CA900D415C1 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E112B834CA900D415C1 /* DIContainer.swift */; };
+		FD6B3E142B834CF700D415C1 /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E132B834CF700D415C1 /* QuestionsManager.swift */; };
+		FD6B3E162B834D5100D415C1 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E152B834D5100D415C1 /* CoordinatorView.swift */; };
+		FD6B3E182B834D7700D415C1 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E172B834D7700D415C1 /* LoaderView.swift */; };
+		FD6B3E1A2B834DA300D415C1 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E192B834DA300D415C1 /* ToastView.swift */; };
+		FD6B3E1C2B834DEA00D415C1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B3E1B2B834DEA00D415C1 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD0775DD2B82DE55004A4A12 /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		FD0775E02B82DEB4004A4A12 /* QuestionsManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManagerMock.swift; sourceTree = "<group>"; };
 		FD609C482B7E402500231D48 /* SurveyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD609C4B2B7E402500231D48 /* SurveyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppApp.swift; sourceTree = "<group>"; };
-		FD609C4D2B7E402500231D48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD609C4F2B7E402600231D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD609C522B7E402600231D48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD609C582B7E402600231D48 /* SurveyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD609C5C2B7E402600231D48 /* SurveyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppTests.swift; sourceTree = "<group>"; };
 		FD609C622B7E402600231D48 /* SurveyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD609C662B7E402600231D48 /* SurveyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITests.swift; sourceTree = "<group>"; };
-		FD609C682B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FD609C752B7E463900231D48 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 		FD609C782B7E873800231D48 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FD609C7B2B7E88C700231D48 /* NetworkRequestInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestInterface.swift; sourceTree = "<group>"; };
@@ -68,6 +72,15 @@
 		FD609C8A2B7E8F6D00231D48 /* AnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
 		FD609C8D2B7E929F00231D48 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		FD609C902B7E930400231D48 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		FD609C922B7ED51E00231D48 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		FD609C942B7F0C9E00231D48 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		FD6B3E102B834B6800D415C1 /* SurveyAppUnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SurveyAppUnitTests.xctestplan; sourceTree = "<group>"; };
+		FD6B3E112B834CA900D415C1 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		FD6B3E132B834CF700D415C1 /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
+		FD6B3E152B834D5100D415C1 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		FD6B3E172B834D7700D415C1 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		FD6B3E192B834DA300D415C1 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		FD6B3E1B2B834DEA00D415C1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +108,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0775DF2B82DE9E004A4A12 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FD0775E02B82DEB4004A4A12 /* QuestionsManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		FD609C3F2B7E402500231D48 = {
 			isa = PBXGroup;
 			children = (
+				FD6B3E102B834B6800D415C1 /* SurveyAppUnitTests.xctestplan */,
 				FD609C4A2B7E402500231D48 /* SurveyApp */,
 				FD609C5B2B7E402600231D48 /* SurveyAppTests */,
-				FD609C652B7E402600231D48 /* SurveyAppUITests */,
 				FD609C492B7E402500231D48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,10 +145,10 @@
 				FD609C7A2B7E88B400231D48 /* Interfaces */,
 				FD609C772B7E872500231D48 /* Services */,
 				FD609C4B2B7E402500231D48 /* SurveyAppApp.swift */,
-				FD609C4D2B7E402500231D48 /* ContentView.swift */,
 				FD609C4F2B7E402600231D48 /* Assets.xcassets */,
 				FD609C512B7E402600231D48 /* Preview Content */,
 				FD609C752B7E463900231D48 /* MainButtonStyle.swift */,
+				FD6B3E1B2B834DEA00D415C1 /* Coordinator.swift */,
 			);
 			path = SurveyApp;
 			sourceTree = "<group>";
@@ -143,18 +164,10 @@
 		FD609C5B2B7E402600231D48 /* SurveyAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD609C5C2B7E402600231D48 /* SurveyAppTests.swift */,
+				FD0775DF2B82DE9E004A4A12 /* Mocks */,
+				FD0775DD2B82DE55004A4A12 /* WelcomeViewModelTests.swift */,
 			);
 			path = SurveyAppTests;
-			sourceTree = "<group>";
-		};
-		FD609C652B7E402600231D48 /* SurveyAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FD609C662B7E402600231D48 /* SurveyAppUITests.swift */,
-				FD609C682B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift */,
-			);
-			path = SurveyAppUITests;
 			sourceTree = "<group>";
 		};
 		FD609C772B7E872500231D48 /* Services */ = {
@@ -162,6 +175,8 @@
 			children = (
 				FD609C782B7E873800231D48 /* NetworkService.swift */,
 				FD609C822B7E896600231D48 /* SurveyService.swift */,
+				FD6B3E112B834CA900D415C1 /* DIContainer.swift */,
+				FD6B3E132B834CF700D415C1 /* QuestionsManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -191,6 +206,10 @@
 			isa = PBXGroup;
 			children = (
 				FD609C8D2B7E929F00231D48 /* WelcomeView.swift */,
+				FD609C922B7ED51E00231D48 /* QuestionView.swift */,
+				FD6B3E152B834D5100D415C1 /* CoordinatorView.swift */,
+				FD6B3E172B834D7700D415C1 /* LoaderView.swift */,
+				FD6B3E192B834DA300D415C1 /* ToastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				FD609C902B7E930400231D48 /* WelcomeViewModel.swift */,
+				FD609C942B7F0C9E00231D48 /* QuestionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -278,6 +298,7 @@
 					};
 					FD609C612B7E402600231D48 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = FD609C472B7E402500231D48;
 					};
 				};
@@ -333,20 +354,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6B3E1A2B834DA300D415C1 /* ToastView.swift in Sources */,
+				FD6B3E162B834D5100D415C1 /* CoordinatorView.swift in Sources */,
 				FD609C7C2B7E88C700231D48 /* NetworkRequestInterface.swift in Sources */,
-				FD609C4E2B7E402500231D48 /* ContentView.swift in Sources */,
 				FD609C4C2B7E402500231D48 /* SurveyAppApp.swift in Sources */,
 				FD609C912B7E930400231D48 /* WelcomeViewModel.swift in Sources */,
 				FD609C7E2B7E88E000231D48 /* SessionProviderInterface.swift in Sources */,
+				FD6B3E122B834CA900D415C1 /* DIContainer.swift in Sources */,
 				FD609C852B7E8A0800231D48 /* QuestionsRequest.swift in Sources */,
+				FD6B3E142B834CF700D415C1 /* QuestionsManager.swift in Sources */,
 				FD609C792B7E873800231D48 /* NetworkService.swift in Sources */,
 				FD609C832B7E896600231D48 /* SurveyService.swift in Sources */,
+				FD609C952B7F0C9E00231D48 /* QuestionViewModel.swift in Sources */,
 				FD609C8E2B7E929F00231D48 /* WelcomeView.swift in Sources */,
 				FD609C762B7E463900231D48 /* MainButtonStyle.swift in Sources */,
 				FD609C892B7E8F1F00231D48 /* SubmitQuestionRequest.swift in Sources */,
+				FD609C932B7ED51E00231D48 /* QuestionView.swift in Sources */,
+				FD6B3E182B834D7700D415C1 /* LoaderView.swift in Sources */,
 				FD609C8B2B7E8F6D00231D48 /* AnswerModel.swift in Sources */,
 				FD609C812B7E891B00231D48 /* AppError.swift in Sources */,
 				FD609C872B7E8A7B00231D48 /* QuestionModel.swift in Sources */,
+				FD6B3E1C2B834DEA00D415C1 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD609C5D2B7E402600231D48 /* SurveyAppTests.swift in Sources */,
+				FD0775DE2B82DE55004A4A12 /* WelcomeViewModelTests.swift in Sources */,
+				FD0775E12B82DEB4004A4A12 /* QuestionsManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD609C692B7E402600231D48 /* SurveyAppUITestsLaunchTests.swift in Sources */,
-				FD609C672B7E402600231D48 /* SurveyAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,9 +551,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personalOrg.SurveyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -552,9 +582,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personalOrg.SurveyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -600,15 +633,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personalOrg.SurveyAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SurveyApp;
 			};
 			name = Debug;
@@ -617,15 +655,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personalOrg.SurveyAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = SurveyApp;
 			};
 			name = Release;

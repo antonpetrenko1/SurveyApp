@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct QuestionModel: Codable {
+struct QuestionModel: Codable, Hashable {
     let id: UInt
     let question: String
 }

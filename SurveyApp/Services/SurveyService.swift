@@ -7,7 +7,12 @@
 
 import Foundation
 
-final class SurveyService {
+protocol SurveyServiceInterface {
+    func getQuestions() async throws -> [QuestionModel]
+    func submitAnswer(model: AnswerModel) async throws
+}
+
+final class SurveyService: ObservableObject, SurveyServiceInterface {
     private let host: URL
     private let network: NetworkService
     
@@ -23,12 +28,11 @@ final class SurveyService {
         return result
     }
     
-    func submitAnswer(model: AnswerModel) async throws -> String {
+    func submitAnswer(model: AnswerModel) async throws {
         let encoder = JSONEncoder()
         let data = try encoder.encode(model)
-        let request: SubmitQuestionRequest = .init(host: host, answerModel: data)
+        let request: SubmitQuestionRequest = .init(host: host)
         
-        let result = try await network.perform(request: request)
-        return result
+        _ = try await network.upload(request: request, data: data)
     }
 }

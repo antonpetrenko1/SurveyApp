@@ -7,25 +7,16 @@
 
 import Foundation
 
-struct SubmitQuestionRequest: NetworkRequestInterface {
-    typealias ResponseDataType = String
-    
+struct SubmitQuestionRequest: NetworkUploadInterface {    
     let host: URL
-    let answerModel: Data
     
     func create() -> URLRequest {
         let modifiedHost = host.appending(path: "question/submit")
         var request = URLRequest(url: modifiedHost)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = answerModel
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         
         return request
-    }
-    
-    func parse(data: Data) throws -> String {
-        let decoder = JSONDecoder()
-        
-        return try decoder.decode(String.self, from: data)
     }
 }
